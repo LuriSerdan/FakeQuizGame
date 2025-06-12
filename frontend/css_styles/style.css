@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.root {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #F6F1E9;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; 
+
+    justify-content: center;
+    align-items: center;
+
+    font-family: "Playfair Display", serif;
+}
+
+main h1 {
+    font-size: 4rem;
+    font-weight: 500;
+
+    margin-bottom: 3rem;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+    padding: 20px 30px 0 30px;
+}
+
+nav button {
+    width: 12rem;
+    height: 4rem;
+
+    font-family: "Playfair Display", serif;
+    font-size: 2.4rem;
+    font-weight: 500;
+
+    border-radius: 11px;
+    border: none;
+    background: #CADFD1;
+}
+
+
+.card-container {
+    position: relative;
+    width: 300px;
+    height: 50%;
+}
+
+.info {
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+
+    margin-top: 15px;
+}
+
+
+.verdadeiro, .falso {
+    word-wrap: break-word;
+    min-width: 150px;
+    margin: 10px;
+    border-radius: 10px;
+    height: 50%;
+    width: 100%;
+    font-size: 25px;
+    font-weight: bolder;
+    background: none;
+    border: none;
+    padding: 10px;
+
+}
+
+
+.verdadeiro {
+    background-color: #6ad96a;
+    color: #0f360f;
+}
+.falso {
+    background-color: #e56a6a;
+    color: #450c0c;
+}
+* {
+    padding: 0; margin: 0;
+}
+
+body {
+    overflow: hidden;
+    width: 100vw; height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #CADFD1;
+    border-radius: 8px;
+    border: 4px solid #94B29E;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    user-select: none; /* Prevent text selection during drag */
+}
+
+@media (max-width: 768px) {
+    /* Estilos para dispositivos móveis */
+    body {
+      font-size: 16px;
+      padding: 10px;
+    }  
+    .info {
+        width: 100%;
+    }
+    .verdadeiro, .falso {
+        width: 100%;
+    }
+}

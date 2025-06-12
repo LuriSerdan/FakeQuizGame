@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perguntas Frequentes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css_styles/styles.css">
+</head>
+<body>
+    <div class="container">
+        <img src="./assets/faq.webp" alt="Pergunta" onclick="openPopup()" class="faq-icon">
+    </div>
+    
+    <div class="popup-overlay" id="popupOverlay">
+        <div class="popup">
+            <button class="close-btn" onclick="closePopup()">X</button>
+            <h1>Perguntas Frequentes</h1>
+            <div class="faq-container">
+                <div class="faq-item" onclick="toggleAnswer('resposta1', this)">
+                    <span>O quiz abrange diferentes tipos de fake news?</span>
+                    <span class="icon">▼</span>
+                </div>
+                <div id="resposta1" class="faq-answer">Sim, o quiz aborda diversos tipos de fake news, incluindo desinformação política, científica e sensacionalista.</div>
+                
+                <div class="faq-item" onclick="toggleAnswer('resposta2', this)">
+                    <span>Posso utilizar o quiz mais de uma vez?</span>
+                    <span class="icon">▼</span>
+                </div>
+                <div id="resposta2" class="faq-answer">Sim, você pode refazer o quiz quantas vezes quiser!</div>
+                
+                <div class="faq-item" onclick="toggleAnswer('resposta3', this)">
+                    <span>O quiz se baseia em fontes confiáveis para criar as perguntas?</span>
+                    <span class="icon">▼</span>
+                </div>
+                <div id="resposta3" class="faq-answer">Sim, todas as perguntas do quiz são elaboradas com base em fontes confiáveis e verificadas.</div>
+                
+                <div class="faq-item" onclick="toggleAnswer('resposta4', this)">
+                    <span>O quiz funciona em celulares e outros dispositivos?</span>
+                    <span class="icon">▼</span>
+                </div>
+                <div id="resposta4" class="faq-answer">Sim, o quiz foi desenvolvido para funcionar perfeitamente em celulares, tablets e computadores.</div>
+                
+                <div class="faq-item" onclick="toggleAnswer('resposta5', this)">
+                    <span>O quiz possui um tempo limite para responder às perguntas?</span>
+                    <span class="icon">▼</span>
+                </div>
+                <div id="resposta5" class="faq-answer">Não, você pode responder às perguntas no seu próprio ritmo, sem limite de tempo.</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
