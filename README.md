@@ -7,7 +7,7 @@ Implementado usando <b>javascript e node.js</b>
 <h2>Como baixar:</h2><br/>
 
 ```bash
-git clone blablab
+git clone https://github.com/LuriSerdan/FakeQuizGame.git
 cd FakeQuizGame/backend
 
 npm install
