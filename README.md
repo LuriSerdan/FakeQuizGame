@@ -2,7 +2,7 @@
 
 ### `Sobre o Projeto:`
 Jogo de adivinhar se uma dada notícia é uma fake ou não.<br>
-Implementado usando javascript e node.js
+Implementado usando <b>javascript e node.js</b>203
 
 <h2>Como baixar:</h2><br/>
 
