@@ -1,6 +1,7 @@
 function Swipe() {
     const events = {
-        onchoice: undefined
+        onchoice: undefined,
+        onend: undefined
     }
     const cardContainer = document.querySelector('.card-container');
     let cards = document.querySelectorAll('.card');
@@ -42,8 +43,7 @@ function Swipe() {
                 // Recalcular a lista de cartões após remoção
                 cards = document.querySelectorAll('.card'); // Atualiza a lista de cartões
                 if (cards.length === 0) {
-
-                    cardContainer.innerHTML = "<div class='card'> você ganhou :)</div>";
+                    events.onend()
                     finishEvents()
                 }
             }, 300);

@@ -33,10 +33,17 @@ function onError() {
   //TODO: implementar caso aconteça um erro
 }
 
+swipe.onend = () => {
+  localStorage.removeItem('state');
+  alert('voce ganhou :)');
+}
+
 swipe.onchoice = choice => {
   if (choice == cards[0].isFake) alert(cards[0].justificativa);
   cards.shift();
+  document.querySelector('.contador').textContent = `${cards.length}`
   localStorage.setItem('state', JSON.stringify(cards));
+
 }
 
 async function fetchFakes() {
@@ -61,5 +68,6 @@ async function main() {
 
 
 window.onload = async ev => {
-  main();
+  await main();
+  document.querySelector('.contador').textContent = `${cards.length}`
 }
